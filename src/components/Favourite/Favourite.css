@@ -1,0 +1,150 @@
+.no-favourites-added {
+    height: 21px;
+    width: 167px;
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 21px;
+    text-align: center;
+    margin-top: 2%;
+  }
+  .nothing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15%;
+  }
+  .top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    margin-top: 1.5rem;
+    margin-bottom: 2%;
+}
+  
+
+
+
+
+  /* recentfavbox css */
+
+
+
+
+
+
+  .rectangle-box{
+    width: 100%;
+    /* height: 73px; */
+    background-color:  #ffffff23;  
+    margin-bottom: 0.25%;
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+}
+.rectangle-box:hover{
+    background-color:   #ffffff4c; 
+}
+.temp-deg {
+    height: 38px;
+    /* width: 37px; */
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 20px;
+  }
+  .city {
+    /* height: 19px; */
+    /* width: 124px; */
+    color: #FFFFFF;
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 6px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 19px;
+  }
+  .mid{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+    align-items: center;
+  }
+  .favorite-heart-button {
+    height: 17px;
+    width: 18px;
+    margin-top: 8px;
+  }
+  .rectangle-box-mobile{
+    display: none;
+  }
+  .fav-sun-pic{
+    height: 38px;
+  width: 36px;
+  margin-top: -2px;
+  }
+  @media screen and (max-width:680px) {
+.rectangle-box-mobile{  
+  width: 100%;
+  margin-top: 5px;
+  height: 73px;
+  background-color: #ffffff23;
+  margin-bottom: 0.25%;
+  padding: 2%;
+  display: flex;
+  justify-content: space-between;}
+
+  
+.rect-mob-r{
+  display: flex;
+  flex-direction: column;
+}
+.mid-mobile{
+  /* height: 23px;
+  width: 167px; */
+  /* padding-bottom: 1%; */
+  display: flex;
+}
+.mobile-pic{
+  /* height: 23px;
+  width: 22px; */
+  margin-right: 5px;
+  margin-top: 7px;
+}
+.temp-deg-mobile{
+  height: 21px;
+  width: 21px;
+  color: white;
+  margin-left: 14px;
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+.city-mobile{
+  margin-left: 35px;
+  margin-top: 8px;
+  height: 16px;
+  width:100%;
+  color: #FFFFFF;
+  font-family: Roboto;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 16px;
+}
+.favorite-heart-button-mobile{
+  margin-top: 20px;
+  height: 17px;
+  width: 18px;
+}
+.rectangle-box{
+  display:none !important;
+}
+  }

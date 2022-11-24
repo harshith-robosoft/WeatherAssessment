@@ -1,0 +1,119 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    /* margin-top: 2.6rem; */
+  }
+  .search-wrapper {
+    position: relative;
+  }
+  .weather-img{
+    height: 30px;
+    width: 142px;
+  }
+  .search-wrapper img {
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+  .search-input{
+   width: 28.625rem;
+   height: 2.813rem;
+   background: transparent;
+   color: white;
+   background-color: rgba(255, 255, 255, 0.212);
+   border: none;
+   border-radius: 5px;
+   padding: 3%;
+  }
+  input:focus {
+    outline: none;
+  }
+  ::placeholder{
+    color: white;
+  }
+  .header-mobile{
+    display: none;
+  }
+  .burger-container{
+    display: none;
+  }
+
+  @media screen and (max-width:680px) {
+    .header {
+        display: none;
+    }
+    .header-mobile{
+      display: flex;
+      justify-content: space-between;
+    }
+    .icon-menu-white {
+      height: 24px;
+      width: 24px;
+    }
+    .icon-search-white {
+      height: 24px;
+      width: 24px;
+    }
+    .burger-container{
+        position: fixed;
+        z-index: 9999;
+        top: 0;
+        left: 0;
+        right: 7rem;
+        bottom: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 3rem;
+    }
+    .burger-container p:hover {
+     color:  black; 
+    }
+    a:link {
+      text-decoration: none;
+    }
+  .active .navlinksmobile{
+    color:  black;
+    font-weight: 800;
+  }
+    .search-container{
+      position: fixed;
+      z-index: 9999;
+      top: 0;
+      left: 0;
+      right: 0rem;
+      bottom: 0;
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      padding:2%;
+    }
+    .icon-back-black {
+      height: 24px;
+      width: 24px;
+     
+    }
+    .search-wrapper-mobile {
+      position: relative;
+    }
+    .search-input-mobile{
+      /* background: transparent; */
+      color: black;
+      width: 90%;
+      background-color: rgba(247, 247, 247, 0.212);
+      border: none;
+      border-radius: 5px;
+      padding: 3%;
+    }
+    
+    /* .rectangle-box:hover{
+      background-color:   #ffffff4c; 
+  } */
+  ::placeholder{
+    color: black;
+  }
+  }
