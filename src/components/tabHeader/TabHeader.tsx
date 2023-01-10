@@ -40,7 +40,7 @@ const TabHeader = () => {
       <div className="tab">
         <div className="tab-l">        
          <NavLink to={"/"}><button className="tablinks">HOME</button></NavLink> 
-         <NavLink to={"/fav"}><button className="tablinks"></button><button className="tablinks">FAVOURITE</button></NavLink> 
+         <NavLink to={"/fav"}><button className="tablinks">FAVOURITE</button></NavLink> 
          <NavLink to={"/recent"}><button className="tablinks">RECENT SEARCH</button></NavLink> 
         </div>
         <div className="tab-r">

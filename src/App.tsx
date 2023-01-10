@@ -14,14 +14,14 @@ function App() {
   const [loading, setLoading] = useState(true);
   setTimeout(() => {
     setLoading(false);
-  }, 2000);
+  }, 1000);
   console.log(loading);
   return (
     <div className="homeContainer">
       {loading ? (
         <div className="loader-div">
-          <div>loading</div>
-          <ClipLoader color="#3663d6" />
+          <div style={{color:"white"}}>loading</div>
+          <ClipLoader color="white" />
         </div>
       ) : (
         <Home />

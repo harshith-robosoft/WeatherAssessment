@@ -20,6 +20,8 @@ const Header = () => {
   const submitHandler = (e: any) => {
     e.preventDefault();
     dispatch(fetchWeather(inputValue));
+    dispatch(fetchWeather(inputValue))
+                dispatch(recentAdd(data))
   };
   // console.log(data);
   // function openSearch() {
@@ -39,8 +41,7 @@ const Header = () => {
             <input
               // value={location}
               // onChange={(event) => setLocation(event.target.value)}
-              onKeyPress={ () =>{dispatch(fetchWeather(inputValue))
-                dispatch(recentAdd(data))}}
+              // onKeyPress={ () =>{}}
 
               value={inputValue}
               onChange={(e) => setinputValue(e.target.value)}
@@ -70,7 +71,7 @@ const Header = () => {
            setSearch(true)}} className="icon-search-white" src="images/search.png" />
       </div>
       {search ? (<div className="search-container">
-        {/* <img className="icon-back-black " src="images/icon_back_black.png" alt="pic" /> */}
+        
         <div className="search-wrapper-mobile">
           <form onSubmit={submitHandler}>
           <img className="icon-back-black " onClick={()=>{
@@ -105,7 +106,7 @@ const Header = () => {
           }} className="navlinksmobile">Home</p></NavLink> 
            <NavLink to={"/fav"}> <p  onClick={()=>{
            setDialog(false)
-          }}className="navlinksmobile">Favuorite</p></NavLink> 
+          }}className="navlinksmobile">Favourite</p></NavLink> 
            <NavLink to={"/recent"}> <p  onClick={()=>{
            setDialog(false)
           }}className="navlinksmobile">Recent</p></NavLink> 

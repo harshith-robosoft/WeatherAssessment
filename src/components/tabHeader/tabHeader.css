@@ -54,4 +54,7 @@
     .tab{
       border-bottom: none;
     }
+    .date{
+      display: none;
+    }
   }
